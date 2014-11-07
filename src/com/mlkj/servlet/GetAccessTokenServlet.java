@@ -29,9 +29,7 @@ public class GetAccessTokenServlet extends HttpServlet {
 		System.out.println("初始化");
 		GetAccessToken getAccessToken = new GetAccessToken(this.getServletContext());
 		//String token =  (String)this.getServletContext().getAttribute("accessToken");
-		Map<String, String> map = new HashMap<String, String>();
-		HttpRequest request = HttpRequest.post("", map, true);
-		String string = request.body();
+		
 	}
 
 }
