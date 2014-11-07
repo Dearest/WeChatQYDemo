@@ -14,6 +14,11 @@ import net.sf.json.JSONObject;
 
 import com.mlkj.utils.HttpRequest;
 
+/**
+ * 被废弃，不用了 
+ * @author hanchen
+ *
+ */
 public class ConnectServlet extends HttpServlet {
 
 	
