@@ -1,4 +1,16 @@
-<div class="container-fluid">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>showuser.html</title>
+	<link <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+
+  </head>
+  
+  <body>
+    <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="navbar">
@@ -109,15 +121,18 @@
 								</tr>
 							</thead>
 							<tbody>
+							<#if users??>
+							<#list users as u>
+							<#if u??>
 								<tr>
 									<td>
-										1
+										${u.id}
 									</td>
 									<td>
-										TB - Monthly
+										${u.name}
 									</td>
 									<td>
-										01/04/2012
+										${u.userId}
 									</td>
 									<td>
 										Default
@@ -126,74 +141,12 @@
 										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
 									</td>
 								</tr>
-								<tr class="success">
-									<td>
-										1
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										01/04/2012
-									</td>
-									<td>
-										Approved
-									</td>
-									<td>
-										<span class="glyphicon glyphicon-edit"></span>
-									</td>
-								</tr>
-								<tr class="error">
-									<td>
-										2
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										02/04/2012
-									</td>
-									<td>
-										Declined
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
-								<tr class="warning">
-									<td>
-										3
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										03/04/2012
-									</td>
-									<td>
-										Pending
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
-								<tr class="info">
-									<td>
-										4
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										04/04/2012
-									</td>
-									<td>
-										Call in to confirm
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
+								</#if>
+								</#list>
+								</#if>
+								
+								
+								
 							</tbody>
 						</table>
 						<div>
@@ -222,15 +175,18 @@
 								</tr>
 							</thead>
 							<tbody>
+							<#if users??>
+							<#list users as u>
+							<#if u??>
 								<tr>
 									<td>
-										1
+										${u.id}
 									</td>
 									<td>
-										TB - Monthly
+										${u.name}
 									</td>
 									<td>
-										01/04/2012
+										${u.userId}
 									</td>
 									<td>
 										Default
@@ -239,90 +195,17 @@
 										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
 									</td>
 								</tr>
-								<tr class="success">
-									<td>
-										1
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										01/04/2012
-									</td>
-									<td>
-										Approved
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
-								<tr class="error">
-									<td>
-										2
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										02/04/2012
-									</td>
-									<td>
-										Declined
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
-								<tr class="warning">
-									<td>
-										3
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										03/04/2012
-									</td>
-									<td>
-										Pending
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
-								<tr class="info">
-									<td>
-										4
-									</td>
-									<td>
-										TB - Monthly
-									</td>
-									<td>
-										04/04/2012
-									</td>
-									<td>
-										Call in to confirm
-									</td>
-									<td>
-										<button class="btn" type="button"><span class="glyphicon glyphicon-edit"></span></button>
-									</td>
-								</tr>
+								</#if>
+								</#list>
+								</#if>
 							</tbody>
 						</table>
-						<div>
-							 <button class="btn btn-primary" type="button">新增</button>
-						</div>
 					</div>
 				</div>
 			</div>
-			 <a id="modal-146022" href="#modal-container-146022" role="button" class="btn" data-toggle="modal">触发遮罩窗体</a>
+		<a id="modal-259440" href="#modal-container-259440" role="button" class="btn" data-toggle="modal">触发遮罩窗体</a>
 			
-			
-		</div>
-
-		<div class="span2">
-		</div>
-		<div id="modal-container-146022" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div id="modal-container-259440" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-header">
 					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					<h3 id="myModalLabel">
@@ -338,5 +221,10 @@
 					 <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary">保存设置</button>
 				</div>
 			</div>
+		</div>
+		<div class="span2">
+		</div>
 	</div>
 </div>
+  </body>
+</html>

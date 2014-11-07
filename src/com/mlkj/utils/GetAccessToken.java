@@ -16,7 +16,7 @@ public class GetAccessToken {
 	public GetAccessToken(ServletContext context){
 		System.out.println("构造方法");
 		this.context = context;
-		timer.schedule(task, 1000, 7000*1000);
+		timer.schedule(task, 10, 7000*1000);
 	}
 	private TimerTask task = new TimerTask() {
 		
