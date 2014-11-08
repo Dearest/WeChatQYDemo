@@ -58,6 +58,11 @@
     <servlet-name>GetUserInfoServlet</servlet-name>
     <servlet-class>com.mlkj.servlet.GetUserInfoServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>com.mlkj.servlet.AddUser</servlet-class>
+  </servlet>
+
 
 
  
@@ -77,6 +82,10 @@
   <servlet-mapping>
     <servlet-name>GetUserInfoServlet</servlet-name>
     <url-pattern>/GetUserInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/addUser</url-pattern>
   </servlet-mapping>
     <filter>
         <filter-name>HomePageFilter</filter-name>

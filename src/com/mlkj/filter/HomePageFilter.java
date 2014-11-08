@@ -34,6 +34,7 @@ public class HomePageFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain filterChain) throws IOException, ServletException {
+		users.clear();
 		String accessToken = (String) request.getServletContext().getAttribute(
 				"accessToken");
 		String departmentId = "4";
@@ -64,6 +65,7 @@ public class HomePageFilter implements Filter {
 		}
 		// 把users放在request是属性里 方便在freemaker里使用
 		request.setAttribute("users", users);
+		request.setAttribute("accessToken", accessToken);
 		request.getRequestDispatcher("WEB-INF/template/showuser.html").forward(
 				request, response);
 	}
