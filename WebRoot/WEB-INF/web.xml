@@ -93,7 +93,7 @@
     </filter>
     <filter-mapping>
         <filter-name>HomePageFilter</filter-name>
-        <url-pattern>/index.html</url-pattern>
+        <url-pattern>/showuser.html</url-pattern>
     </filter-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
